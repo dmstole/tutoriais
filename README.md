@@ -3,7 +3,7 @@ Diversos tutoriais para configuracao de ambiente de desenvolvimento, automacao d
 
 ## Docker
 
-[docker-comandos] - Comandos basicos para manipular containers.
+[docker-comandos][Comandos basicos para manipular containers.]
 
 ## Git
 
