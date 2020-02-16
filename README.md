@@ -1,7 +1,7 @@
-# tutoriais
+# Tutoriais
 Diversos tutoriais para configuracao de ambiente de desenvolvimento, automacao de entregas continuas, automacao de controle de qualidade.
 
-# Docker
+## Docker
 
 [docker-comandos] - Comandos basicos para manipular containers.
 
