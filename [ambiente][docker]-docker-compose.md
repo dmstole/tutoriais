@@ -6,7 +6,7 @@ Para executar esse projeto, tenha na mesma pasta arquivos com o codigo abaixo. E
 docker-compose up -d
 ```
 
-Caso ainda nao tenha instalado o docker-compose, veja esse [link]
+Caso ainda nao tenha instalado o docker-compose, veja esse [link].
 
 ## Exemplo de projeto node.js:
 index.js
