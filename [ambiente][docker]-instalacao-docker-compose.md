@@ -17,3 +17,8 @@ Verique se ocorreu tudo bem com a instalacao:
 ```
 docker-compose --version
 ```
+
+referencia:
+```
+https://docs.docker.com/compose/install/
+```
