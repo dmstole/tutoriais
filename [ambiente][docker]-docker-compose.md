@@ -1,8 +1,15 @@
 
 # Projeto modelo em node.js, utilizando Dockerfile e docker-compose.
 
-## Exemplo de projeto node.js:
+Para executar esse projeto, tenha na mesma pasta arquivos com o codigo abaixo. E em seguida, execute o seguinte comando para instanciar container:
+```
+docker-compose up -d
+```
 
+Caso ainda nao tenha instalado o docker-compose, veja esse [link]
+
+## Exemplo de projeto node.js:
+index.js
 ```
 'use strict';
 
@@ -62,7 +69,7 @@ EXPOSE 8080
 CMD [ "npm", "start" ]
 ```
 
-docker-compose
+docker-compose.yml
 ```
 version: '3'
 services:
@@ -74,3 +81,5 @@ services:
     ports:
       - '3000:8080'
 ```
+
+[link]: <>
