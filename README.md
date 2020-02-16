@@ -5,6 +5,8 @@ Diversos tutoriais para configuracao de ambiente de desenvolvimento, automacao d
 
 [Instalacao do docker-compose.][docker-compose-instalacao]
 
+[Exemplo de projeto com docker-compose][docker-compose-nodejs]
+
 [Comandos basicos para manipular containers.][docker-comandos]
 
 ## Git
@@ -23,6 +25,7 @@ Diversos tutoriais para configuracao de ambiente de desenvolvimento, automacao d
 
 
    [docker-compose-instalacao]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bdocker%5D-instalacao-docker-compose.md>
+   [docker-compose-nodejs]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bdocker%5D-docker-compose.md>
    [docker-comandos]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bdocker%5D-comandos.md>
    [git-comandos]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bgit%5D-comandos.md>
    [ssh-instalacao]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bssh%5D-configuracao-autenticacao.md>
