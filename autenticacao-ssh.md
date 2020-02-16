@@ -32,7 +32,9 @@ Esta comando vai criar uma nova chave utilizando o email como nome da chave.
 
 Informe um nome da chave caso necessite a geracao de novas chaves. Por padrao nao iremos informar um tipo de  secure passphrase.
 > Enter a file in which to save the key (/home/you/.ssh/id_rsa): <nome_chave> [Pressione o Enter]
+
 > Enter passphrase (empty for no passphrase): [Pressione o Enter]
+
 > Enter same passphrase again: [Pressione o Enter]
 
 ## Adicionando sua chave SSH no ssh-agent
