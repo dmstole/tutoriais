@@ -7,17 +7,17 @@ Diversos tutoriais para configuracao de ambiente de desenvolvimento, automacao d
 
 ## Git
 
-[git-comandos] - Comandos basicos para manipular repositorio local e remoto.
+[Comandos basicos para manipular repositorio local e remoto.][git-comandos]
 
 
 ## SSH
 
-[ssh-instalacao] - Criacao de chave privada e publica para uso em autenticacao.
+[Criacao de chave privada e publica para uso em autenticacao.][ssh-instalacao]
 
 
 ## Visual Studio Insiders
 
-[vscode-insiders-instalacao] - Instalacao de configuracao de ambiente de desenvolvimento.
+[Instalacao de configuracao de ambiente de desenvolvimento.][vscode-insiders-instalacao]
 
 
    [docker-comandos]: <https://github.com/dmstole/tutoriais/blob/master/%5Bambiente%5D%5Bdocker%5D-comandos.md>
