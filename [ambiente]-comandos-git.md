@@ -1,6 +1,6 @@
 # Comandos utilizados no GIT
 
-> git init = inicia 
+> ```git init``` = inicia 
 
 > git config user.name "seu nome aqui" (nome cadastro no github).
 
