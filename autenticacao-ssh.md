@@ -3,9 +3,9 @@ Apos a geracao da chave ssh, sera possivel a realizacao desse tipo de autenticac
 
 ## Neste artigo veremos
 
-Geracao de nova chave SSH
-Adicionando no SSH Agent
-Adicionando chave no GitHub
+* Geracao de nova chave SSH
+* Adicionando no SSH Agent
+* Adicionando chave no GitHub
 
 Caso voce nao deseje informar a senha de sua chave SSH, sera necessario adicionar a chave no SSH agent, onde este gerencia e lembra o SO de sua respectiva senha.
 
