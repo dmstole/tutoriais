@@ -35,7 +35,6 @@ Informe um nome da chave caso necessite a geracao de novas chaves. Por padrao na
 > Enter passphrase (empty for no passphrase): [Pressione o Enter]
 > Enter same passphrase again: [Pressione o Enter]
 
-## Adding your SSH key to the ssh-agent
 ## Adicionando sua chave SSH no ssh-agent
 
 Inicie o ssh-agent.
