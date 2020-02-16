@@ -9,7 +9,7 @@ Adicionando chave no GitHub
 
 Caso voce nao deseje informar a senha de sua chave SSH, sera necessario adicionar a chave no SSH agent, onde este gerencia e lembra o SO de sua respectiva senha.
 
-# Geracao de nova chave SSH
+## Geracao de nova chave SSH
 
 Abra um terminal
 
@@ -30,21 +30,21 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 Esta comando vai criar uma nova chave utilizando o email como nome da chave.
 
-> Generating public/private rsa key pair.
-When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+Informe um nome da chave caso necessite a geracao de novas chaves. Por padrao nao iremos informar um tipo de  secure passphrase.
+> Enter a file in which to save the key (/home/you/.ssh/id_rsa): <nome_chave> [Pressione o Enter]
+> Enter passphrase (empty for no passphrase): [Pressione o Enter]
+> Enter same passphrase again: [Pressione o Enter]
 
-> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]
-At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+## Adding your SSH key to the ssh-agent
+## Adicionando sua chave SSH no ssh-agent
 
-> Enter passphrase (empty for no passphrase): [Type a passphrase]
-> Enter same passphrase again: [Type passphrase again]
-Adding your SSH key to the ssh-agent
-Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key.
-Start the ssh-agent in the background.
-
+Inicie o ssh-agent.
+```
 $ eval "$(ssh-agent -s)"
+```
 > Agent pid 59566
-Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
 
-$ ssh-add ~/.ssh/id_rsa
-Add the SSH key to your GitHub account.
+Adicione a chave privada no ssh-agent.
+```
+$ ssh-add ~/.ssh/<nome_chave - exemplo: id_rsa_github>
+```
