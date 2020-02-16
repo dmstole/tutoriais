@@ -6,6 +6,11 @@ Para executar esse projeto, tenha na mesma pasta arquivos com o codigo abaixo. E
 docker-compose up -d
 ```
 
+Para derrubar sua rede de containers, execute o seguinte codigo:
+```
+docker-compose down
+```
+
 Caso ainda nao tenha instalado o docker-compose, veja esse [link].
 
 ## Exemplo de projeto node.js:
