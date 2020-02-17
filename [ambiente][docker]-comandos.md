@@ -1,7 +1,7 @@
 
 # Notas sobre Docker
 
-Segue a lista com os principais comandos utilizados durante o curso:
+Segue a lista com os principais comandos:
 
 ## Comandos relacionados às informações
 
