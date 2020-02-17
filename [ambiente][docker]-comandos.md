@@ -1,34 +1,74 @@
 
 # Notas sobre Docker
 
-* Comandos básicos do Docker para podermos baixar imagens e interagir com o container.
-* Imagens do Docker possuem um sistema de arquivos em camadas (Layered File System) e os benefícios dessa abordagem principalmente para o download de novas imagens.
-* Imagens são Read-Only sempre (apenas para leitura)
-* Containers representam uma instância de uma imagem
-* Como imagens são Read-Only os containers criam nova camada (layer) para guardar as alterações
-* O comando Docker run e as possibilidades de execução de um container
+Segue a lista com os principais comandos utilizados durante o curso:
 
-Segue também uma breve lista dos comandos utilizados:
-> *docker ps* - exibe todos os containers em execução no momento.
+## Comandos relacionados às informações
 
-> *docker ps -a* - exibe todos os containers, independentemente de estarem em execução ou não.
+```docker version``` - exibe a versão do docker que está instalada.
 
-> *docker run -it NOME_DA_IMAGEM* - conecta o terminal que estamos utilizando com o do container.
+```docker inspect ID_CONTAINER``` - retorna diversas informações sobre o container.
 
-> *docker start ID_CONTAINER* - inicia o container com id em questão.
+```docker ps``` - exibe todos os containers em execução no momento.
 
-> *docker stop ID_CONTAINER* - interrompe o container com id em questão.
+```docker ps -a``` - exibe todos os containers, independentemente de estarem em execução ou não.
 
-> *docker start -a -i ID_CONTAINER* - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
+## Comandos relacionados à execução
 
-> *docker rm ID_CONTAINER* - remove o container com id em questão.
+```docker run NOME_DA_IMAGEM``` - cria um container com a respectiva imagem passada como parâmetro.
 
-> *docker container prune* - remove todos os containers que estão parados.
+```docker run -it NOME_DA_IMAGEM``` - conecta o terminal que estamos utilizando com o do container.
 
-> *docker rmi NOME_DA_IMAGEM* - remove a imagem passada como parâmetro.
+```docker run -d -P --name NOME dockersamples/static-site``` - ao executar, dá um nome ao container.
 
-> *docker run -d -P --name NOME dockersamples/static-site* - ao executar, dá um nome ao container.
+```docker run -d -p 12345:80 dockersamples/static-site``` - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
 
-> *docker run -d -p 12345:80 dockersamples/static-site* - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
+```docker run -v "CAMINHO_VOLUME" NOME_DA_IMAGEM``` - cria um volume no respectivo caminho do container.
 
-> *docker run -d -P -e AUTHOR="Fulano" dockersamples/static-site* - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.
+```docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM``` - cria um container especificando seu nome e qual rede deverá ser usada.
+
+## Comandos relacionados à inicialização/interrupção
+
+```docker start ID_CONTAINER``` - inicia o container com id em questão.
+
+```docker start -a -i ID_CONTAINER``` - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
+
+```docker stop ID_CONTAINER``` - interrompe o container com id em questão.
+
+## Comandos relacionados à remoção
+
+```docker rm ID_CONTAINER``` - remove o container com id em questão.
+
+```docker container prune``` - remove todos os containers que estão parados.
+
+```docker rmi NOME_DA_IMAGEM``` - remove a imagem passada como parâmetro.
+
+## Comandos relacionados à construção de Dockerfile
+
+```docker build -f Dockerfile``` - cria uma imagem a partir de um Dockerfile.
+
+```docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM``` - constrói e nomeia uma imagem não-oficial.
+
+```docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM CAMINHO_DOCKERFILE``` - constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
+
+## Comandos relacionados ao Docker Hub
+
+```docker login``` - inicia o processo de login no Docker Hub.
+
+```docker push NOME_USUARIO/NOME_IMAGEM``` - envia a imagem criada para o Docker Hub.
+
+```docker pull NOME_USUARIO/NOME_IMAGEM``` - baixa a imagem desejada do Docker Hub.
+
+## Comandos relacionados à rede
+
+```hostname -i``` - mostra o ip atribuído ao container pelo docker (funciona apenas dentro do container).
+
+```docker network create --driver bridge NOME_DA_REDE``` - cria uma rede especificando o driver desejado.
+
+## Comandos relacionados ao docker-compose
+
+```docker-compose build``` - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
+
+```docker-compose up``` - Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
+
+```docker-compose down``` - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
