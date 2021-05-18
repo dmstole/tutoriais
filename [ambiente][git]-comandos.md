@@ -40,3 +40,15 @@ Eh o caminho inverso!!! COMO ASSIM? Digamos que você já tem o arquivo no seu n
 ```git log```
 
 Histórico de todos os commits executados.
+
+```git checkout origin main ou master ```
+
+Retorna à sua raiz após criar uma branch
+
+``` git pull ```
+
+Atualiza o seu repósitporio raiz no projeto em que está trabalhando na sua máquina. Esse comando tras todas as atualizações feitas no Github.
+
+``` git checkout - b <nome da branch>/<nome do commit> ```
+
+Cria um novo ramo para ser trabalhado na sua maquina e depois enviado ao Github.
