@@ -10,13 +10,13 @@ pip install virtualenv
 pip install virtualenvwapper_win
 ```
 
-## Criação de virtualenv
+## Como criar a virtualenv
 
 ```
 mkvirtualenv <nome da venv> -p pyhon<versao>
 ```
 
-## Remoção de virtualenv
+## Como remover a virtualenv
 
 ```
 rmvirtualenv <nome da venv>
