@@ -1,6 +1,11 @@
 
 # Projeto modelo em node.js, utilizando Dockerfile e docker-compose.
 
+O comando abaixo força o container a ser recriado.
+```
+docker-compose up -d --no-deps --build
+```
+
 Para executar esse projeto, tenha na mesma pasta arquivos com o codigo abaixo. E em seguida, execute o seguinte comando para instanciar container:
 ```
 docker-compose up -d
